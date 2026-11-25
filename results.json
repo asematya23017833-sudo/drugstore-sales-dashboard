@@ -1,0 +1,45 @@
+{
+  "kpis": {
+    "transactions": 844392,
+    "stores": 1115,
+    "total_sales_eur": 5873180623.0,
+    "avg_daily_sales_eur": 6955.51,
+    "avg_daily_customers": 762.7,
+    "first_date": "2013-01-01 00:00:00",
+    "last_date": "2015-07-31 00:00:00"
+  },
+  "sales_by_store_type": [
+    {
+      "StoreType": "a",
+      "sales_meur": 3165.33,
+      "avg_daily_sales": 6925.0
+    },
+    {
+      "StoreType": "d",
+      "sales_meur": 1765.39,
+      "avg_daily_sales": 6822.0
+    },
+    {
+      "StoreType": "c",
+      "sales_meur": 783.22,
+      "avg_daily_sales": 6933.0
+    },
+    {
+      "StoreType": "b",
+      "sales_meur": 159.23,
+      "avg_daily_sales": 10231.0
+    }
+  ],
+  "promo_effect": [
+    {
+      "promo": "Promo",
+      "avg_daily_sales": 8228.0,
+      "avg_customers": 844.0
+    },
+    {
+      "promo": "No promo",
+      "avg_daily_sales": 5929.0,
+      "avg_customers": 697.0
+    }
+  ]
+}

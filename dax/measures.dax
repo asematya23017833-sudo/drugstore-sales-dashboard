@@ -1,0 +1,8 @@
+-- DAX measures for the Power BI version of the dashboard
+Total Sales = SUM ( Sales[Sales] )
+Total Customers = SUM ( Sales[Customers] )
+Avg Daily Sales = AVERAGEX ( VALUES ( Sales[Date] ), CALCULATE ( SUM ( Sales[Sales] ) ) )
+Avg Daily Customers = AVERAGEX ( VALUES ( Sales[Date] ), CALCULATE ( SUM ( Sales[Customers] ) ) )
+Promo Sales Share = DIVIDE ( CALCULATE ( [Total Sales], Sales[Promo] = 1 ), [Total Sales] )
+Sales vs Prev Month = [Total Sales] - CALCULATE ( [Total Sales], PREVIOUSMONTH ( 'Calendar'[Date] ) )
+Sales MoM % = DIVIDE ( [Sales vs Prev Month], CALCULATE ( [Total Sales], PREVIOUSMONTH ( 'Calendar'[Date] ) ) )
